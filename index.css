@@ -1,0 +1,165 @@
+/* import typefaces */
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Rubik&display=swap");
+
+:root {
+  /* colors */
+  --bg-main: #121212;
+  --txt-main: #eaeaea;
+  --txt-secondary: #ffb800;
+  --accent-pos: #6bd425;
+  --accent-neg: #d7263d;
+
+  /* typefaces */
+  --text-heading: "Rubik", sans-serif;
+  --text-copy: "Lato", sans-serif;
+
+  /* spacing */
+  --margin: 0.5rem;
+  --modifier: calc(40rem - 100%);
+}
+
+html {
+  font-size: 16px;
+}
+
+/* screen reader-only text */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* vintage IE */
+  clip: rect(1px, 1px, 1px, 1px);
+  border: 0;
+}
+
+/* reset */
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* holy albatross layout */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  --margin: 1rem;
+  --modifier: calc(40rem - 100%);
+  margin: calc(var(--margin) * -1);
+}
+
+.container > * {
+  flex-grow: 1;
+  flex-basis: calc(var(--modifier) * 999);
+  margin: var(--margin);
+}
+
+body {
+  background-color: var(--bg-main);
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label {
+  color: var(--txt-secondary);
+  font-family: var(--text-heading);
+}
+
+h1 { 
+  font-size: 2.5rem;
+ }
+
+ h2 { 
+   font-size: 2rem;
+  }
+
+  h3 { 
+    font-size: 1.75rem;
+   }
+
+p {
+  color: var(--txt-main);
+  font-family: var(--text-copy);
+  font-size: 1.25rem;
+}
+
+.search { 
+  padding-right: 4rem; 
+ }
+
+.search label,
+.search input {
+  display: block;
+  padding: 0.25rem;
+  min-width: 8rem;
+  font-size: 1.25rem;
+}
+
+.search input { 
+  border-radius: 2px; 
+  border-style: solid; 
+  background: var(--txt-main);
+  border-color: var(--txt-main);
+  font-size: 1.25rem; 
+ }
+
+input::placeholder {
+  color: var(--bg-main);
+  padding: .25rem; 
+}
+
+input:focus::placeholder {
+  opacity: 0;
+}
+
+.submit-button { 
+  display: inline; 
+  padding: .5rem 1.5rem; 
+  margin: .5rem 0; 
+  background-color: var(--txt-main);
+  border-color: var(--txt-main); 
+  border-style: none; 
+  border-radius: .25rem; 
+  font-weight: 600;
+  font-size: 1rem; 
+ }
+
+ .submit-button:hover { 
+   background-color: var(--txt-secondary);
+   color: var(--bg-main); 
+   cursor: pointer;
+  }
+
+  .second-search { 
+    margin: 0 auto;
+   }
+
+  #second-search { 
+    margin-top: 4rem; 
+   }
+
+.search, .options {
+  margin: 2rem 0 2rem 2rem;
+}
+
+.option-set { 
+  white-space: nowrap;
+  padding: 1rem; 
+ }
+
+.checkbox label { 
+  padding: .5rem; 
+  font-size: 1.25rem;
+ }
+
+ .checkbox { 
+   margin: .75rem auto; 
+  }

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="/index.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>tickerSearch</title>
+  <script src="/app.js" defer></script>
+</head>
+
+<body>
+  <main>
+
+    <section class="search">
+      <h1>tickerSearch</h1>
+      <p>tickerSearch opens a new window and set of tabs.</p>
+
+      <label for="ticker-search">ticker</label>
+      <input type="search" name="ticker" id="ticker-search" placeholder="enter a stock symbol" />
+      <button type="button" class="submit-button">Submit</button>
+    </section>
+
+    <section class="options">
+      <div class="container">
+
+        <div class="option-set">
+          <h2>Technical Analysis</h2>
+
+          <div class="checkbox">
+            <input type="checkbox" name="stockcharts" id="stockcharts" value="https://stockcharts.com/h-sc/ui?s=">
+            <label for="stockcharts">StockCharts.com</label>
+          </div>
+
+          <div class="checkbox">
+            <input type="checkbox" name="" id="tradingview" value="https://www.tradingview.com/chart/?symbol=">
+            <label for="tradingview">TradingView.com</label>
+          </div>
+        </div>
+
+        <div class="option-set">
+          <h2>Financial Information</h2>
+
+          <div class="checkbox">
+            <input type="checkbox" name="docoh" id="docoh" disabled>
+            <label for="docoh">Docoh.com</label>
+          </div>
+
+          <div class="checkbox">
+            <input type="checkbox" name="finviz" id="finviz" value="https://finviz.com/quote.ashx?t=">
+            <label for="finviz">FinViz.com</label>
+          </div>
+
+          <div class="checkbox">
+            <input type="checkbox" name="sec" id="sec" disabled>
+            <label for="sec">SEC.gov</label>
+          </div>
+        </div>
+
+        <div class="option-set">
+          <h2>Insider Buying</h2>
+
+          <div class="checkbox">
+            <input type="checkbox" name="openinsider" id="openinsider" value="http://openinsider.com/search?q=">
+            <label for="openinsider">OpenInsider.com</label>
+          </div>
+
+          <div class="checkbox">
+            <input type="checkbox" name="whalewisdom" id="whalewisdom" value="https://whalewisdom.com/stock/">
+            <label for="whalewisdom">WhaleWisdom.com</label>
+          </div>
+        </div>
+
+        <div class="option-set">
+          <h2>News</h2>
+
+          <div class="checkbox">
+            <input type="checkbox" name="seekingalpha" id="seekingalpha" value="https://seekingalpha.com/symbol/">
+            <label for="seekingalpha">SeekingAlpha.com</label>
+          </div>
+
+          <div class="checkbox">
+            <input type="checkbox" name="marketwatch" id="marketwatch" value="https://www.marketwatch.com/investing/stock/">
+            <label for="marketwatch">MarketWatch.com</label>
+          </div>
+
+          <div class="checkbox">
+            <input type="checkbox" name="yahoo-finance" id="yahoo-finance" value="https://finance.yahoo.com/quote/">
+            <label for="">Finance.Yahoo.com</label>
+          </div>
+        </div>
+
+    </section>
+
+
+  </main>
+
+</body>
+
+</html>
