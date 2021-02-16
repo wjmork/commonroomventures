@@ -1,3 +1,14 @@
+/* --------
+TODO 
+
+  [] Open multiple tabs without popup blocker 
+  [] Prevent URLs that are already open from opening again 
+  [] Add a 'clear all' button for checkboxes 
+  [] Add a 'Links to open' section populated with <a> tags upon checkbox selection 
+
+-------- */ 
+
+
 const button = document.querySelector(".submit-button");
 
 button.addEventListener("click", function () {
@@ -33,3 +44,5 @@ const openSites = (linksArr) => {
     window.open(link); 
   });
 };
+
+

@@ -3,11 +3,12 @@
 
 :root {
   /* colors */
-  --bg-main: #121212;
-  --txt-main: #eaeaea;
-  --txt-secondary: #ffb800;
-  --accent-pos: #6bd425;
-  --accent-neg: #d7263d;
+  --bg-main: #131823;
+  --txt-main: #f7f7f7;
+  --txt-secondary: #2788e5;
+  --accent-pos: #4fa79a;
+  --accent-neg: #ea5250;
+  --accent-neut: ##2A2F39; 
 
   /* typefaces */
   --text-heading: "Rubik", sans-serif;
@@ -67,8 +68,7 @@ h2,
 h3,
 h4,
 h5,
-h6,
-label {
+h6 {
   color: var(--txt-secondary);
   font-family: var(--text-heading);
 }
@@ -85,7 +85,8 @@ h1 {
     font-size: 1.75rem;
    }
 
-p {
+p, 
+label {
   color: var(--txt-main);
   font-family: var(--text-copy);
   font-size: 1.25rem;
