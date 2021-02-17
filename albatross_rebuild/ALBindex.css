@@ -37,7 +37,7 @@ html {
 }
 
 /* reset */
-body {
+/* body {
   margin: 0;
   padding: 0;
   border: 0;
@@ -46,6 +46,29 @@ body {
   align-items: center;
   min-height: 100vh;
   background-color: var(--bg-main);
+} */
+
+
+/* ALBATROSS LAYOUT */
+body {
+  padding: 2rem;
+  margin: 0 auto;
+  max-width: 60rem;
+  background-color: var(--bg-main);
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  --margin: 1rem;
+  --modifier: calc(40rem - 100%);
+  margin: calc(var(--margin) * -1);
+}
+
+.container > * {
+  flex-grow: 1;
+  flex-basis: calc(var(--modifier) * 999);
+  margin: var(--margin);
 }
 
 h1,
@@ -130,7 +153,7 @@ input:focus::placeholder {
 
 .search,
 .options {
-  margin: 4rem;
+  /* margin: 4rem; */
 }
 
 .group {
