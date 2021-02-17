@@ -13,6 +13,8 @@
 <body>
   <main>
 
+    <!-- BEGIN LAYOUT -->
+
     <section class="search">
       <h1>tickerSearch</h1>
       <p>tickerSearch opens each selected link in a tab.</p>
@@ -22,68 +24,53 @@
       <button type="button" class="submit-button">Submit</button>
     </section>
 
-    <section class="options">
+    <h2>Sites</h2>
 
-      <div>
-        <h2>Sites</h2>
+    <h3>Technical Analysis</h3>
+    <div class="container group options">
+      <input type="checkbox" name="cb" id="stockcharts" value="https://stockcharts.com/h-sc/ui?s=">
+      <label for="stockcharts">StockCharts.com</label>
 
-        <div class="layout"><div>
-          
-          <h3>Technical Analysis</h3>
+      <input type="checkbox" name="cb" id="tradingview" value="https://www.tradingview.com/chart/?symbol=">
+      <label for="tradingview">TradingView.com</label>
+    </div>
 
-            <div class="group">
-              <input type="checkbox" name="cb" id="stockcharts" value="https://stockcharts.com/h-sc/ui?s=">
-              <label for="stockcharts">StockCharts.com</label>
+    <h3>Financial Information</h3>
+    <div class="container group options">
+      <input type="checkbox" name="cb" id="docoh" disabled>
+      <label for="docoh">Docoh.com</label>
 
-              <input type="checkbox" name="cb" id="tradingview" value="https://www.tradingview.com/chart/?symbol=">
-              <label for="tradingview">TradingView.com</label>
-            </div>
-          
-          <h3>Financial Information</h3>
+      <input type="checkbox" name="cb" id="finviz" value="https://finviz.com/quote.ashx?t=">
+      <label for="finviz">FinViz.com</label>
 
-            <div class="group">
-              <input type="checkbox" name="cb" id="docoh" disabled>
-              <label for="docoh">Docoh.com</label>
+      <input type="checkbox" name="cb" id="sec" disabled>
+      <label for="sec">SEC.gov</label>
+    </div>
 
-              <input type="checkbox" name="cb" id="finviz" value="https://finviz.com/quote.ashx?t=">
-              <label for="finviz">FinViz.com</label>
+    <h3>Insider Buying</h3>
+    <div class="container group options">
+      <input type="checkbox" name="cb" id="openinsider" value="http://openinsider.com/search?q=">
+      <label for="openinsider">OpenInsider.com</label>
 
-              <input type="checkbox" name="cb" id="sec" disabled>
-              <label for="sec">SEC.gov</label>
-            </div>
-          
-          <h3>Insider Buying</h3>
+      <input type="checkbox" name="cb" id="whalewisdom" value="https://whalewisdom.com/stock/">
+      <label for="whalewisdom">WhaleWisdom.com</label>
+    </div>
 
-            <div class="group">
-                <input type="checkbox" name="cb" id="openinsider" value="http://openinsider.com/search?q=">
-                <label for="openinsider">OpenInsider.com</label>
 
-                <input type="checkbox" name="cb" id="whalewisdom" value="https://whalewisdom.com/stock/">
-                <label for="whalewisdom">WhaleWisdom.com</label>
-            </div>
-          
-          <h3>News</h3>
+    <h3>News</h3>
+    <div class="container group options">
+      <input type="checkbox" name="cb" id="seekingalpha" value="https://seekingalpha.com/symbol/">
+      <label for="seekingalpha">SeekingAlpha.com</label>
 
-            <div class="group">
-              <input type="checkbox" name="cb" id="seekingalpha" value="https://seekingalpha.com/symbol/">
-              <label for="seekingalpha">SeekingAlpha.com</label>
+      <input type="checkbox" name="cb" id="marketwatch" value="https://www.marketwatch.com/investing/stock/">
+      <label for="marketwatch">MarketWatch.com</label>
 
-              <input type="checkbox" name="cb" id="marketwatch" value="https://www.marketwatch.com/investing/stock/">
-              <label for="marketwatch">MarketWatch.com</label>
+      <input type="checkbox" name="cb" id="yahoo-finance" value="https://finance.yahoo.com/quote/">
+      <label for="">Finance.Yahoo.com</label>
 
-              <input type="checkbox" name="cb" id="yahoo-finance" value="https://finance.yahoo.com/quote/">
-              <label for="">Finance.Yahoo.com</label>
-            </div>
+    </div>
 
-        </div>
-        
-      
-      </div>
-
-    </section>
-
- 
-    </section>
+    <!-- END LAYOUT  -->
 
   </main>
 
