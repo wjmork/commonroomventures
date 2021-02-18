@@ -102,6 +102,7 @@ label {
   color: var(--txt-main);
   font-family: var(--text-copy);
   font-size: 1.25rem;
+  white-space: nowrap; 
 }
 
 .search {
@@ -213,3 +214,13 @@ label::before {
   transition: 0.25s all ease;
 }
 
+footer { 
+  margin-top: 4rem; 
+  margin-bottom: 4rem; 
+ }
+
+code { 
+
+  color: var(--txt-secondary); 
+  letter-spacing: .0625rem;
+ }
