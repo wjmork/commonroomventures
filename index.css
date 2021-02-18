@@ -224,3 +224,16 @@ code {
   color: var(--txt-secondary); 
   letter-spacing: .0625rem;
  }
+
+
+/* focused checkboxes */
+input:focus-within + label{ 
+  padding-left: 1rem; 
+ }
+
+ input:focus-within + label:before {
+  top: 0;
+  width: 100%;
+  height: 2em;
+  background: var(--txt-secondary);
+  }
