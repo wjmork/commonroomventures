@@ -17,7 +17,7 @@
       </header>
 
       <section class="search">
-        <form method="get" autocomplete="on">
+        <form method="get" id="search" autocomplete="on">
         <label for="ticker-search">ticker</label>
         <input
           type="search"
@@ -25,7 +25,7 @@
           id="ticker-search"
           placeholder="enter a stock symbol"
         />
-        <button type="button" class="submit-button">Submit</button>
+        <button type="button" form="search" class="submit-button">Submit</button>
         </form>
       </section>
 
